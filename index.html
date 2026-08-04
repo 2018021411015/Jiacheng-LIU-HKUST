@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Jiacheng Liu — Ph.D. researcher in hybrid quantum systems, magnonics and spintronics at HKUST.">
-<title>Jiacheng Liu | Academic Website</title>
+<title>About | Jiacheng Liu</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
 <style>
@@ -88,6 +88,11 @@ nav {
 .links a {
   color:var(--m);
   font-size:.94rem
+}
+
+.links a.active {
+  color:var(--a);
+  font-weight:500
 }
 
 .mode {
@@ -304,10 +309,14 @@ section h2 {
 }
 
 .badge,summary {
-  display:inline-block;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:68px;
+  height:36px;
   border:1px solid var(--a);
   border-radius:3px;
-  padding:2px 8px;
+  padding:2px 12px;
   color:var(--a);
   font-size:.74rem;
   line-height:1.6;
@@ -331,6 +340,20 @@ section h2 {
 
 details {
   display:inline
+}
+
+summary {
+  list-style:none
+}
+
+summary::-webkit-details-marker {
+  display:none
+}
+
+.authors-note {
+  margin:3px 0 0;
+  color:var(--m);
+  font-size:.78rem
 }
 
 details[open] {
@@ -468,37 +491,18 @@ footer {
 </style>
 </head>
 <body>
-<!--
-============================================================
-手动编辑指南 / MANUAL EDITING GUIDE
-============================================================
-1. 使用 Ctrl + F 搜索 EDIT 1 到 EDIT 8。
-2. 一般只修改标签中间显示的文字。
-3. 修改链接时，只替换 href 引号中的网址。
-4. 添加论文时，复制 PAPER START 到 PAPER END 之间的完整区块。
-5. 不要删除成对出现的开始标签和结束标签。
-6. 修改完成后点击 Commit changes 保存。
-============================================================
--->
-<!-- ===== EDIT 1: TOP NAVIGATION / 顶部导航 ===== -->
-<header class="head">
-<nav>
-<a class="brand" href="#about">Jiacheng Liu</a>
+<header class="head"><nav>
+<a class="brand" href="index.html">Jiacheng Liu</a>
 <div class="links">
-<a href="#about">About</a>
-<a href="#publications">Publications</a>
-<a href="#research">Research</a>
-<a href="#talks">Talks</a>
-<a href="#cv">CV</a>
+<a class="active" href="index.html">About</a>
+<a href="publications.html">Publications</a>
+<a href="research.html">Research</a>
+<a href="talks.html">Talks</a>
+<a href="cv.html">CV</a>
 </div>
-
 <button class="mode" aria-label="Toggle dark mode" onclick="document.documentElement.dataset.theme=document.documentElement.dataset.theme==='dark'?'light':'dark'">◐</button>
-</nav>
-
-</header>
-
+</nav></header>
 <main class="wrap">
-<!-- ===== EDIT 2: NAME, TITLE, PHOTO AND PROFILE LINKS / 姓名、身份、照片和链接 ===== -->
 <section class="hero" id="about" style="border:0;margin:0;padding:0">
 <h1>
 <strong>Jiacheng</strong> Liu</h1>
@@ -531,25 +535,6 @@ footer {
 
 </div>
 
-<!-- ===== EDIT 4: RESEARCH INTERESTS / 研究方向 ===== -->
-<div class="hero-research" id="research">
-<h2>Current research interests</h2>
-
-<ul>
-
-<li>
-<strong>Spin Waves as Coherent Sources for Qubit Control</strong>Harnessing the nonlinear response of magnetic materials to generate coherent spin-wave signals for the control of quantum bits.</li>
-
-<li>
-<strong>Strong Coupling in Magnonic Hybrid Systems</strong>Strong coupling in magnonic hybrid systems provides a tunable, low-power, and highly reconfigurable platform for information exchange, with potential applications ranging from microwave signal processing for 5G communications to cryogenic control of quantum bits. My research explores both dipolar-interaction-mediated magnon–photon coupling and interfacial-exchange-driven magnon–magnon coupling.</li>
-   
-<li>
-<strong>Magnetoelastic Artificial Superlattices</strong>Band engineering in artificial lattices enables tailored magnon–phonon coupling, providing a versatile platform for exploring emergent physical phenomena and realizing multifunctional control of surface acoustic waves.</li>
-
-</ul>
-
-</div>
-
 <div class="contact-note">
 <p>For a deeper insight into my research, please refer to my <a href="https://scholar.google.com/citations?user=_iueNKUAAAAJ&amp;hl=zh-CN&amp;oi=ao">google scholar</a>.</p>
 
@@ -565,244 +550,8 @@ footer {
 
 </section>
 
-<!-- ===== EDIT 5: PUBLICATIONS / 论文 ===== -->
-<!-- 添加论文时，复制一个完整的 PAPER START 到 PAPER END 区块；论文图片稍后可替换左侧 thumb -->
-<section id="publications">
-<div class="eye">Research output</div>
-<h2>Selected publications</h2>
-
-<!-- PAPER 1 START -->
-<article class="pub">
-<div class="thumb t1">SPIN–MIRROR<br>INTERFERENCE</div>
-<div>
-<h3>Microwave interference between a spin ensemble and its mirror image</h3>
-<p class="authors">B. Y. Wu, Y. T. Cheng, K. T. Lin, F. Aziz, C. X. Run, K. M. Hsieh, <strong>J. C. Liu</strong>, et al.</p>
-<p class="venue"><em>Physical Review A</em> 113, 053720 (2026)</p>
-<div class="buttons">
-<details><summary>ABS</summary><p>This work investigates coherent microwave interference between a spin ensemble and its electromagnetic mirror image.</p></details>
-<a class="badge" href="https://scholar.google.com/scholar?q=%22Microwave+interference+between+a+spin+ensemble+and+its+mirror+image%22">HTML</a>
-<a class="badge citation" href="https://scholar.google.com/scholar?q=%22Microwave+interference+between+a+spin+ensemble+and+its+mirror+image%22">Citations: 4</a>
-<a class="badge scholar" href="https://scholar.google.com/scholar?q=%22Microwave+interference+between+a+spin+ensemble+and+its+mirror+image%22">Scholar</a>
-</div>
-</div>
-</article>
-<!-- PAPER END -->
-
-<!-- PAPER 2 START -->
-<article class="pub">
-<div class="thumb t2">MAGNON–QUBIT<br>SYSTEM</div>
-<div>
-<h3>On-Chip Photon-Mediated Magnon-Superconducting Qubit System and its Quantum Application</h3>
-<p class="authors"><strong>J. Liu</strong>, F. P. Nugraha, and Q. Shao</p>
-<p class="venue"><em>2025 9th IEEE Electron Devices Technology &amp; Manufacturing Conference (EDTM)</em>, 1–3 (2025)</p>
-<div class="buttons">
-<details><summary>ABS</summary><p>An on-chip hybrid architecture that uses photons to mediate coherent interactions between magnons and superconducting qubits.</p></details>
-<a class="badge" href="https://scholar.google.com/scholar?q=%22On-Chip+Photon-Mediated+Magnon-Superconducting+Qubit+System+and+its+Quantum+Application%22">HTML</a>
-<a class="badge citation" href="https://scholar.google.com/scholar?q=%22On-Chip+Photon-Mediated+Magnon-Superconducting+Qubit+System+and+its+Quantum+Application%22">Citations: 0</a>
-<a class="badge scholar" href="https://scholar.google.com/scholar?q=%22On-Chip+Photon-Mediated+Magnon-Superconducting+Qubit+System+and+its+Quantum+Application%22">Scholar</a>
-</div>
-</div>
-</article>
-<!-- PAPER END -->
-
-<!-- PAPER 3 START -->
-<article class="pub">
-<div class="thumb t3">MICROWAVE<br>CONVERSION</div>
-<div>
-<h3>Wideband coherent microwave conversion via magnon nonlinearity in a hybrid quantum system</h3>
-<p class="authors">J. Wu, <strong>J. Liu</strong>, Z. Ren, M. Y. Leung, W. K. Leung, K. O. Ho, X. Wang, Q. Shao, et al.</p>
-<p class="venue"><em>npj Spintronics</em> 2, 30 (2024)</p>
-<div class="buttons">
-<details><summary>ABS</summary><p>A hybrid magnonic platform for wideband coherent microwave conversion enabled by magnon nonlinearity.</p></details>
-<a class="badge" href="https://doi.org/10.1038/s44306-024-00035-2">HTML</a>
-<a class="badge citation" href="https://scholar.google.com/scholar?q=%22Wideband+coherent+microwave+conversion+via+magnon+nonlinearity+in+a+hybrid+quantum+system%22">Citations: 10</a>
-<a class="badge scholar" href="https://scholar.google.com/scholar?q=%22Wideband+coherent+microwave+conversion+via+magnon+nonlinearity+in+a+hybrid+quantum+system%22">Scholar</a>
-</div>
-</div>
-</article>
-<!-- PAPER END -->
-
-<!-- PAPER 4 START -->
-<article class="pub">
-<div class="thumb t4">MAGNON–MAGNON<br>COUPLING</div>
-<div>
-<h3>Strong magnon-magnon coupling and low dissipation rate in an all-magnetic-insulator heterostructure</h3>
-<p class="authors"><strong>J. Liu</strong>, Y. Xiong, J. Liang, X. Wu, C. Liu, S. K. Cheung, Z. Ren, R. Liu, A. Christy, et al.</p>
-<p class="venue"><em>Physical Review Applied</em> 22, 034017 (2024)</p>
-<div class="buttons">
-<details><summary>ABS</summary><p>A comprehensive experimental and numerical study of strong magnon–magnon coupling with low dissipation in an all-magnetic-insulator heterostructure.</p></details>
-<a class="badge" href="https://doi.org/10.1103/PhysRevApplied.22.034017">HTML</a>
-<a class="badge citation" href="https://scholar.google.com/scholar?q=%22Strong+magnon-magnon+coupling+and+low+dissipation+rate+in+an+all-magnetic-insulator+heterostructure%22">Citations: 15</a>
-<a class="badge scholar" href="https://scholar.google.com/scholar?q=%22Strong+magnon-magnon+coupling+and+low+dissipation+rate+in+an+all-magnetic-insulator+heterostructure%22">Scholar</a>
-</div>
-</div>
-</article>
-<!-- PAPER END -->
-
-<!-- PAPER 5 START -->
-<article class="pub">
-<div class="thumb t5">MAGNON–PHONON<br>CRYSTALS</div>
-<div>
-<h3>Hybrid magnon-phonon crystals</h3>
-<p class="authors">L. Liao, <strong>J. Liu</strong>, J. Puebla, Q. Shao, and Y. Otani</p>
-<p class="venue"><em>npj Spintronics</em> 2, 47 (2024)</p>
-<div class="buttons">
-<details><summary>ABS</summary><p>Band engineering in artificial superlattices enables tailored magnon–phonon coupling and multifunctional control of surface acoustic waves.</p></details>
-<a class="badge" href="https://doi.org/10.1038/s44306-024-00052-1">HTML</a>
-<a class="badge citation" href="https://scholar.google.com/scholar?q=%22Hybrid+magnon-phonon+crystals%22">Citations: 14</a>
-<a class="badge scholar" href="https://scholar.google.com/scholar?q=%22Hybrid+magnon-phonon+crystals%22">Scholar</a>
-</div>
-</div>
-</article>
-<!-- PAPER END -->
-
-<!-- PAPER 6 START -->
-<article class="pub">
-<div class="thumb t1">SPIN-WAVE<br>MULTIPLIER</div>
-<div>
-<h3>On-chip zero-field spin wave frequency multiplier and its application on qubit quantum control</h3>
-<p class="authors"><strong>J. Liu</strong>, J. Wu, Z. Ren, S. Yang, and Q. Shao</p>
-<p class="venue"><em>2023 International Electron Devices Meeting (IEDM)</em>, 1–4 (2023)</p>
-<div class="buttons">
-<details><summary>ABS</summary><p>A zero-field spin-wave frequency multiplier that exploits nonlinear magnetic response for on-chip coherent control of quantum bits.</p></details>
-<a class="badge" href="https://doi.org/10.1109/IEDM45741.2023.10413860">HTML</a>
-<a class="badge citation" href="https://scholar.google.com/scholar?q=%22On-chip+zero-field+spin+wave+frequency+multiplier+and+its+application+on+qubit+quantum+control%22">Citations: 2</a>
-<a class="badge scholar" href="https://scholar.google.com/scholar?q=%22On-chip+zero-field+spin+wave+frequency+multiplier+and+its+application+on+qubit+quantum+control%22">Scholar</a>
-</div>
-</div>
-</article>
-<!-- PAPER END -->
-
-<!-- PAPER 7 START -->
-<article class="pub">
-<div class="thumb t2">MICROMAGNETIC<br>MODELLING</div>
-<div>
-<h3>Numerical and Micromagnetic Investigation of Strong Magnon-Magnon Coupling in Magnetic Insulator Bilayers</h3>
-<p class="authors"><strong>J. Liu</strong> and Q. Shao</p>
-<p class="venue"><em>2023 IEEE International Magnetic Conference—Short Papers (INTERMAG Short Papers)</em> (2023)</p>
-<div class="buttons">
-<details><summary>ABS</summary><p>A numerical and micromagnetic investigation of strong magnon–magnon coupling in magnetic-insulator bilayers.</p></details>
-<a class="badge" href="https://scholar.google.com/scholar?q=%22Numerical+and+Micromagnetic+Investigation+of+Strong+Magnon-Magnon+Coupling+in+Magnetic+Insulator+Bilayers%22">HTML</a>
-<a class="badge citation" href="https://scholar.google.com/scholar?q=%22Numerical+and+Micromagnetic+Investigation+of+Strong+Magnon-Magnon+Coupling+in+Magnetic+Insulator+Bilayers%22">Citations: 0</a>
-<a class="badge scholar" href="https://scholar.google.com/scholar?q=%22Numerical+and+Micromagnetic+Investigation+of+Strong+Magnon-Magnon+Coupling+in+Magnetic+Insulator+Bilayers%22">Scholar</a>
-</div>
-</div>
-</article>
-<!-- PAPER END -->
-</section>
-
-<!-- ===== EDIT 6: TALKS AND PRESENTATIONS / 报告与会议 ===== -->
-<section id="talks">
-<div class="eye">Professional activities</div>
-
-<h2>Selected talks & presentations</h2>
-
-<ul class="talks">
-<li>
-<strong>IEEE Magnetic Society Summer School</strong> — On-chip zero-field spin wave frequency multiplier and its application on qubit quantum control. <span>Poster · Distinguished Poster Award · 2025</span>
-</li>
-
-<li>
-<strong>IEEE EDTM</strong> — On-chip photon-mediated magnon-superconducting qubit system and its quantum application. <span>Oral · 2025</span>
-</li>
-
-<li>
-<strong>IEEE IEDM</strong> — On-chip zero-field spin wave frequency multiplier and its application on qubit quantum control. <span>Oral · 2023</span>
-</li>
-
-<li>
-<strong>IEEE INTERMAG</strong> — Numerical and micromagnetic investigation of strong magnon-magnon coupling. <span>Oral · 2023</span>
-</li>
-
-</ul>
-
-</section>
-
-<!-- ===== EDIT 7: CV, EDUCATION AND HONORS / 教育经历与奖项 ===== -->
-<section id="cv">
-<div class="eye">Curriculum vitae</div>
-
-<h2>Education, experience & honors</h2>
-
-<div class="cols">
-<div>
-<div class="item">
-<div class="date">2022–Present</div>
-
-<h3>Hong Kong University of Science and Technology</h3>
-
-<p>Ph.D. Student, Electronic and Computer Engineering · Advisor: Prof. Qiming Shao · CGA: 3.984/4.3</p>
-
-</div>
-
-<div class="item">
-<div class="date">2023–2024</div>
-
-<h3>RIKEN, Japan</h3>
-
-<p>Visiting Ph.D. Student, Quantum Nano-Scale Magnetism Research Team.</p>
-
-</div>
-
-<div class="item">
-<div class="date">2018–2022</div>
-
-<h3>University of Electronic Science and Technology of China</h3>
-
-<p>B.Eng. in Electronic Engineering · GPA: 3.96/4.0</p>
-
-</div>
-
-</div>
-
-<div>
-<div class="item">
-<div class="date">2025</div>
-
-<h3>Distinguished Poster Award</h3>
-
-<p>IEEE Magnetic Society Summer School</p>
-
-</div>
-
-<div class="item">
-<div class="date">2022–2024</div>
-
-<h3>RedBird Ph.D. Scholarship</h3>
-
-<p>HKUST</p>
-
-</div>
-
-<div class="item">
-<div class="date">2023</div>
-
-<h3>Student Presenter Travel Grant</h3>
-
-<p>IEEE IEDM</p>
-
-</div>
-
-<div class="item">
-<div class="date">2019–2021</div>
-
-<h3>National & Provincial Honors</h3>
-
-<p>National Scholarship; Outstanding Graduate of Sichuan Province; UESTC Outstanding Student.</p>
-
-</div>
-
-</div>
-
-</div>
-
-<a class="cvbtn" href="mailto:jliuex@connect.ust.hk?subject=CV request">Request complete CV</a>
-</section>
 
 </main>
-
-<!-- ===== EDIT 8: FOOTER / 页脚 ===== -->
-<footer>© 2026 Jiacheng Liu · Inspired by the al-folio academic theme · Hosted by GitHub Pages</footer>
-
+<footer>© 2026 Jiacheng Liu · Hosted by GitHub Pages</footer>
 </body>
 </html>
