@@ -1,10 +1,825 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Jiacheng Liu — Ph.D. researcher in hybrid quantum systems, magnonics and spintronics at HKUST."><title>Jiacheng Liu | Academic Website</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet"><style>
-:root{--a:#2f6fab;--t:#30343a;--m:#747980;--l:#e5e7ea;--s:#f7f8fa;--p:#fff}
-[data-theme=dark]{--a:#79b8f3;--t:#e7e9ec;--m:#aab0b7;--l:#3b4047;--s:#252a30;--p:#1c2025}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:var(--p);color:var(--t);font:16px/1.72 Roboto,Arial,sans-serif}a{color:var(--a);text-decoration:none}a:hover{text-decoration:underline}
-.head{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--p) 94%,transparent);border-bottom:1px solid var(--l);backdrop-filter:blur(10px)}nav{max-width:980px;min-height:72px;margin:auto;padding:0 22px;display:flex;align-items:center;gap:28px}.brand{margin-right:auto;color:var(--t);font:600 1.22rem "Roboto Slab",serif}.links{display:flex;gap:26px}.links a{color:var(--m);font-size:.94rem}.mode{border:0;background:none;color:var(--m);font-size:1.2rem;cursor:pointer}
-.wrap{max-width:980px;margin:auto;padding:58px 22px 90px}.hero{min-height:620px}.profile{float:right;width:290px;margin:8px 0 35px 55px;text-align:left}.profile img{width:100%;height:355px;object-fit:cover;border-radius:6px;box-shadow:0 2px 10px #0002}.plinks{margin-top:16px;font:500 .93rem/1.75 monospace}.plinks div{white-space:nowrap}.plinks a{font-family:Roboto,Arial,sans-serif;font-weight:500}.eye{color:var(--a);text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;font-weight:700}.hero h1{font:300 3.15rem/1.12 Roboto,Arial,sans-serif;margin:0 0 10px;letter-spacing:-.035em}.hero h1 strong{font-weight:700}.sub{font-size:1.05rem;font-weight:400;color:var(--t);margin:0 0 27px}.bio{font-size:1.03rem;line-height:1.72}.hero-research{margin-top:28px}.hero-research h2{font:400 1.72rem Roboto,Arial,sans-serif;margin:0 0 12px}.hero-research ul{padding-left:25px}.hero-research li{margin:8px 0}.hero-research li strong{display:block}.contact-note{margin-top:24px}.contact-note p{margin:8px 0}.status{display:inline-flex;align-items:center;gap:9px;background:var(--s);border-left:3px solid var(--a);padding:10px 14px;margin-top:12px;font-size:.9rem}.dot{width:8px;height:8px;border-radius:50%;background:#28b67a;box-shadow:0 0 0 4px #28b67a22}
-section{clear:both;padding-top:36px;margin-top:42px;border-top:1px solid var(--l)}section h2{font:600 1.75rem "Roboto Slab",serif;margin:0 0 24px}.pub{display:grid;grid-template-columns:155px 1fr;gap:24px;padding:24px 0;border-top:1px solid var(--l)}.pub:first-of-type{border-top:0;padding-top:0}.thumb{height:104px;border-radius:3px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;font-weight:700;letter-spacing:.05em;padding:15px;box-shadow:0 1px 4px #0002}.t1{background:linear-gradient(135deg,#173f5f,#3caea3)}.t2{background:linear-gradient(135deg,#295b87,#57a0d3)}.t3{background:linear-gradient(135deg,#244b75,#7baed4)}.t4{background:linear-gradient(135deg,#173e63,#4f82b4)}.t5{background:linear-gradient(135deg,#123451,#2f6fab)}.pub h3{font-size:1.02rem;line-height:1.45;margin:0 0 5px;font-weight:500}.authors,.venue{font-size:.88rem;color:var(--m);margin:2px 0}.authors strong{color:var(--t)}.buttons{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}.badge,summary{display:inline-block;border:1px solid var(--a);border-radius:3px;padding:2px 8px;color:var(--a);font-size:.74rem;line-height:1.6;cursor:pointer}.badge:hover,summary:hover{background:var(--a);color:#fff;text-decoration:none}details{display:inline}details[open]{display:block;margin-top:12px}details[open] summary{margin-bottom:8px}details p{font-size:.87rem;color:var(--m);margin:0;padding:10px 12px;background:var(--s)}
-.cols{display:grid;grid-template-columns:1fr 1fr;gap:38px}.item{margin-bottom:25px}.date{color:var(--a);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}.item h3{font-size:1rem;margin:3px 0}.item p,.talks span{font-size:.9rem;color:var(--m);margin:2px 0}.talks li{margin:14px 0;padding-left:6px}.cvbtn{display:inline-block;margin-top:12px;padding:8px 14px;border-radius:3px;background:var(--a);color:#fff}footer{border-top:1px solid var(--l);color:var(--m);text-align:center;padding:30px 20px;font-size:.78rem}
-@media(max-width:720px){nav{flex-wrap:wrap;padding:13px 18px}.brand{width:100%}.links{gap:17px;overflow:auto;width:100%}.mode{position:absolute;right:16px;top:16px}.wrap{padding:38px 20px 70px}.profile{float:none;width:100%;margin:0 0 30px;text-align:left;display:grid;grid-template-columns:125px 1fr;align-items:start;gap:18px}.profile img{width:125px;height:155px}.hero h1{font-size:2.3rem}.cols{grid-template-columns:1fr}.pub{grid-template-columns:1fr}.thumb{width:155px}.plinks{margin-top:0;font-size:.76rem}}
-</style></head><body><header class="head"><nav><a class="brand" href="#about">Jiacheng Liu</a><div class="links"><a href="#about">About</a><a href="#publications">Publications</a><a href="#research">Research</a><a href="#talks">Talks</a><a href="#cv">CV</a></div><button class="mode" aria-label="Toggle dark mode" onclick="document.documentElement.dataset.theme=document.documentElement.dataset.theme==='dark'?'light':'dark'">◐</button></nav></header><main class="wrap"><section class="hero" id="about" style="border:0;margin:0;padding:0"><h1><strong>Jiacheng</strong> Liu</h1><p class="sub">Ph.D. Student, Department of Electronic and Computer Engineering, <a href="https://hkust.edu.hk/">HKUST</a></p><div class="profile"><img src="https://github.com/2018021411015.png" alt="Portrait of Jiacheng Liu"><div class="plinks"><div>Lab page: <a href="https://sqml.ust.hk/">SQML</a></div><div>Visiting lab: <a href="https://otaniqnm.com/home/">Otani Lab</a></div><div>Mail: <a href="mailto:jliuex@connect.ust.hk">jliuex@connect.ust.hk</a></div><div>Google Scholar: <a href="https://scholar.google.com/citations?user=_iueNKUAAAAJ&amp;hl=zh-CN&amp;oi=ao">_iueNKUAAAAJ</a></div></div></div><div class="bio"><p>I’m a Ph.D. student in the Department of Electronic and Computer Engineering at <a href="https://hkust.edu.hk/">The Hong Kong University of Science and Technology</a>. In the <a href="https://sqml.ust.hk/">Spintronic Quantum Material Laboratory (SQML)</a>, under the mentorship of Prof. <a href="https://researchportal.hkust.edu.hk/en/persons/qiming-shao/">Qiming Shao</a>, I focus on hybrid quantum systems involving magnons, photons, phonons, and superconducting qubits.</p><p>From November 2023 to June 2024, I was a visiting Ph.D. student in the <a href="https://otaniqnm.com/home/">Quantum Nano-Scale Magnetism Research Team at RIKEN</a>, advised by Prof. <a href="https://www.k.u-tokyo.ac.jp/materials/en/otani/">Yoshichika Otani</a> and Prof. Qiming Shao. My research combines device physics, micromagnetic and numerical modelling, microwave measurements, and nanofabrication to develop coherent, low-dissipation, on-chip quantum technologies.</p></div><div class="hero-research" id="research"><h2>Current research interests</h2><ul><li><strong>Hybrid magnon–photon quantum systems</strong>Coherent microwave conversion, nonlinear magnonic processes, and photon-mediated quantum interfaces.</li><li><strong>Strong magnon–magnon coupling</strong>Engineering low-dissipation coupling in all-magnetic-insulator heterostructures through modelling, simulation, and experiment.</li><li><strong>Hybrid magnon–phonon crystals</strong>Tailoring coupled excitations and band structures using periodic and moiré-like magnetic-acoustic systems.</li><li><strong>Magnon–superconducting-qubit interfaces</strong>Exploring on-chip hybrid platforms for coherent quantum control and information processing.</li></ul></div><div class="contact-note"><p>For a deeper insight into my research, please refer to my <a href="#publications">publications</a>.</p><p>If you wish to discuss with me, feel free to contact me via <a href="mailto:jliuex@connect.ust.hk">email</a>.</p></div><div class="status"><span class="dot"></span><strong>Seeking postdoctoral opportunities starting in 2027</strong></div></section><section id="publications"><div class="eye">Research output</div><h2>Selected publications</h2><article class="pub"><div class="thumb t1">MICROWAVE<br>CONVERSION</div><div><h3>Wideband coherent microwave conversion via magnon nonlinearity in a hybrid quantum system</h3><p class="authors">J. Wu*, <strong>J. Liu*</strong>, Z. Ren*, et al.</p><p class="venue"><em>npj Spintronics</em> 2, 30 (2024)</p><div class="buttons"><details><summary>Abs</summary><p>A hybrid magnonic platform for wideband coherent microwave conversion enabled by magnon nonlinearity.</p></details><a class="badge" href="https://doi.org/10.1038/s44306-024-00035-2">DOI</a></div></div></article><article class="pub"><div class="thumb t2">MAGNON<br>COUPLING</div><div><h3>Strong magnon-magnon coupling and low dissipation rate in an all-magnetic-insulator heterostructure</h3><p class="authors"><strong>J. Liu</strong> et al.</p><p class="venue"><em>Physical Review Applied</em> 22, 034017 (2024)</p><div class="buttons"><details><summary>Abs</summary><p>Experimental and numerical investigation of strong magnon coupling and low dissipation in a magnetic-insulator heterostructure.</p></details><a class="badge" href="https://doi.org/10.1103/PhysRevApplied.22.034017">DOI</a></div></div></article><article class="pub"><div class="thumb t3">MAGNON–PHONON<br>CRYSTALS</div><div><h3>Hybrid magnon-phonon crystals</h3><p class="authors">L. Liao, <strong>J. Liu</strong>, J. Puebla, Q. Shao, and Y. Otani</p><p class="venue"><em>npj Spintronics</em> 2, 47 (2024)</p><div class="buttons"><details><summary>Abs</summary><p>Engineered periodic magnetic and acoustic structures for tailoring hybrid magnon–phonon excitations.</p></details><a class="badge" href="https://doi.org/10.1038/s44306-024-00052-1">DOI</a></div></div></article><article class="pub"><div class="thumb t4">NEUROMORPHIC<br>SPINTRONICS</div><div><h3>Tunable intermediate states for neuromorphic computing with spintronic devices</h3><p class="authors">S. K. Cheung, Z. Xiao, <strong>J. Liu</strong>, Z. Ren, and Q. Shao</p><p class="venue"><em>Journal of Applied Physics</em> 136 (2024)</p><div class="buttons"><details><summary>Abs</summary><p>Tunable magnetic intermediate states and their application to multi-level neuromorphic computing architectures.</p></details><a class="badge" href="https://doi.org/10.1063/5.0187647">DOI</a></div></div></article><article class="pub"><div class="thumb t5">PHONONIC<br>RESONATOR</div><div><h3>Q-factor enhancement of thin-film piezoelectric-on-silicon MEMS resonator by phononic crystal-reflector composite structure</h3><p class="authors"><strong>J. Liu</strong> et al.</p><p class="venue"><em>Micromachines</em> 11, 1130 (2020)</p><div class="buttons"><details><summary>Abs</summary><p>A phononic-crystal reflector design for suppressing anchor loss and improving the quality factor of piezoelectric MEMS resonators.</p></details><a class="badge" href="https://doi.org/10.3390/mi11121130">DOI</a></div></div></article></section><section id="talks"><div class="eye">Professional activities</div><h2>Selected talks & presentations</h2><ul class="talks"><li><strong>IEEE Magnetic Society Summer School</strong> — On-chip zero-field spin wave frequency multiplier and its application on qubit quantum control. <span>Poster · Distinguished Poster Award · 2025</span></li><li><strong>IEEE EDTM</strong> — On-chip photon-mediated magnon-superconducting qubit system and its quantum application. <span>Oral · 2025</span></li><li><strong>IEEE IEDM</strong> — On-chip zero-field spin wave frequency multiplier and its application on qubit quantum control. <span>Oral · 2023</span></li><li><strong>IEEE INTERMAG</strong> — Numerical and micromagnetic investigation of strong magnon-magnon coupling. <span>Oral · 2023</span></li></ul></section><section id="cv"><div class="eye">Curriculum vitae</div><h2>Education, experience & honors</h2><div class="cols"><div><div class="item"><div class="date">2022–Present</div><h3>Hong Kong University of Science and Technology</h3><p>Ph.D. Student, Electronic and Computer Engineering · Advisor: Prof. Qiming Shao · CGA: 3.984/4.3</p></div><div class="item"><div class="date">2023–2024</div><h3>RIKEN, Japan</h3><p>Visiting Ph.D. Student, Quantum Nano-Scale Magnetism Research Team.</p></div><div class="item"><div class="date">2018–2022</div><h3>University of Electronic Science and Technology of China</h3><p>B.Eng. in Electronic Engineering · GPA: 3.96/4.0</p></div></div><div><div class="item"><div class="date">2025</div><h3>Distinguished Poster Award</h3><p>IEEE Magnetic Society Summer School</p></div><div class="item"><div class="date">2022–2024</div><h3>RedBird Ph.D. Scholarship</h3><p>HKUST</p></div><div class="item"><div class="date">2023</div><h3>Student Presenter Travel Grant</h3><p>IEEE IEDM</p></div><div class="item"><div class="date">2019–2021</div><h3>National & Provincial Honors</h3><p>National Scholarship; Outstanding Graduate of Sichuan Province; UESTC Outstanding Student.</p></div></div></div><a class="cvbtn" href="mailto:jliuex@connect.ust.hk?subject=CV request">Request complete CV</a></section></main><footer>© 2026 Jiacheng Liu · Inspired by the al-folio academic theme · Hosted by GitHub Pages</footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Jiacheng Liu — Ph.D. researcher in hybrid quantum systems, magnonics and spintronics at HKUST.">
+<title>Jiacheng Liu | Academic Website</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ===== WEBSITE COLORS AND LAYOUT =====
+   Main blue: change --a below.
+   Most users do not need to edit the remaining CSS.
+*/
+:root {
+  --a:#2f6fab;
+  --t:#30343a;
+  --m:#747980;
+  --l:#e5e7ea;
+  --s:#f7f8fa;
+  --p:#fff
+}
+
+[data-theme=dark] {
+  --a:#79b8f3;
+  --t:#e7e9ec;
+  --m:#aab0b7;
+  --l:#3b4047;
+  --s:#252a30;
+  --p:#1c2025
+}
+
+* {
+  box-sizing:border-box
+}
+
+html {
+  scroll-behavior:smooth;
+  scroll-padding-top:86px
+}
+
+body {
+  margin:0;
+  background:var(--p);
+  color:var(--t);
+  font:16px/1.72 Roboto,Arial,sans-serif
+}
+
+a {
+  color:var(--a);
+  text-decoration:none
+}
+
+a:hover {
+  text-decoration:underline
+}
+
+.head {
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:color-mix(in srgb,var(--p) 94%,transparent);
+  border-bottom:1px solid var(--l);
+  backdrop-filter:blur(10px)
+}
+
+nav {
+  max-width:980px;
+  min-height:72px;
+  margin:auto;
+  padding:0 22px;
+  display:flex;
+  align-items:center;
+  gap:28px
+}
+
+.brand {
+  margin-right:auto;
+  color:var(--t);
+  font:600 1.22rem "Roboto Slab",serif
+}
+
+.links {
+  display:flex;
+  gap:26px
+}
+
+.links a {
+  color:var(--m);
+  font-size:.94rem
+}
+
+.mode {
+  border:0;
+  background:none;
+  color:var(--m);
+  font-size:1.2rem;
+  cursor:pointer
+}
+
+.wrap {
+  max-width:980px;
+  margin:auto;
+  padding:58px 22px 90px
+}
+
+.hero {
+  min-height:620px
+}
+
+.profile {
+  float:right;
+  width:290px;
+  margin:8px 0 35px 55px;
+  text-align:left
+}
+
+.profile img {
+  width:100%;
+  height:355px;
+  object-fit:cover;
+  border-radius:6px;
+  box-shadow:0 2px 10px #0002
+}
+
+.plinks {
+  margin-top:16px;
+  font:500 .93rem/1.75 monospace
+}
+
+.plinks div {
+  white-space:nowrap
+}
+
+.plinks a {
+  font-family:Roboto,Arial,sans-serif;
+  font-weight:500
+}
+
+.eye {
+  color:var(--a);
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-size:.72rem;
+  font-weight:700
+}
+
+.hero h1 {
+  font:300 3.15rem/1.12 Roboto,Arial,sans-serif;
+  margin:0 0 10px;
+  letter-spacing:-.035em
+}
+
+.hero h1 strong {
+  font-weight:700
+}
+
+.sub {
+  font-size:1.05rem;
+  font-weight:400;
+  color:var(--t);
+  margin:0 0 27px
+}
+
+.bio {
+  font-size:1.03rem;
+  line-height:1.72
+}
+
+.hero-research {
+  margin-top:28px
+}
+
+.hero-research h2 {
+  font:400 1.72rem Roboto,Arial,sans-serif;
+  margin:0 0 12px
+}
+
+.hero-research ul {
+  padding-left:25px
+}
+
+.hero-research li {
+  margin:8px 0
+}
+
+.hero-research li strong {
+  display:block
+}
+
+.contact-note {
+  margin-top:24px
+}
+
+.contact-note p {
+  margin:8px 0
+}
+
+.status {
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  background:var(--s);
+  border-left:3px solid var(--a);
+  padding:10px 14px;
+  margin-top:12px;
+  font-size:.9rem
+}
+
+.dot {
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:#28b67a;
+  box-shadow:0 0 0 4px #28b67a22
+}
+
+section {
+  clear:both;
+  padding-top:36px;
+  margin-top:42px;
+  border-top:1px solid var(--l)
+}
+
+section h2 {
+  font:600 1.75rem "Roboto Slab",serif;
+  margin:0 0 24px
+}
+
+.pub {
+  display:grid;
+  grid-template-columns:155px 1fr;
+  gap:24px;
+  padding:24px 0;
+  border-top:1px solid var(--l)
+}
+
+.pub:first-of-type {
+  border-top:0;
+  padding-top:0
+}
+
+.thumb {
+  height:104px;
+  border-radius:3px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+  font-weight:700;
+  letter-spacing:.05em;
+  padding:15px;
+  box-shadow:0 1px 4px #0002
+}
+
+.t1 {
+  background:linear-gradient(135deg,#173f5f,#3caea3)
+}
+
+.t2 {
+  background:linear-gradient(135deg,#295b87,#57a0d3)
+}
+
+.t3 {
+  background:linear-gradient(135deg,#244b75,#7baed4)
+}
+
+.t4 {
+  background:linear-gradient(135deg,#173e63,#4f82b4)
+}
+
+.t5 {
+  background:linear-gradient(135deg,#123451,#2f6fab)
+}
+
+.pub h3 {
+  font-size:1.02rem;
+  line-height:1.45;
+  margin:0 0 5px;
+  font-weight:500
+}
+
+.authors,.venue {
+  font-size:.88rem;
+  color:var(--m);
+  margin:2px 0
+}
+
+.authors strong {
+  color:var(--t)
+}
+
+.buttons {
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin-top:10px
+}
+
+.badge,summary {
+  display:inline-block;
+  border:1px solid var(--a);
+  border-radius:3px;
+  padding:2px 8px;
+  color:var(--a);
+  font-size:.74rem;
+  line-height:1.6;
+  cursor:pointer
+}
+
+.badge:hover,summary:hover {
+  background:var(--a);
+  color:#fff;
+  text-decoration:none
+}
+
+details {
+  display:inline
+}
+
+details[open] {
+  display:block;
+  margin-top:12px
+}
+
+details[open] summary {
+  margin-bottom:8px
+}
+
+details p {
+  font-size:.87rem;
+  color:var(--m);
+  margin:0;
+  padding:10px 12px;
+  background:var(--s)
+}
+
+.cols {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:38px
+}
+
+.item {
+  margin-bottom:25px
+}
+
+.date {
+  color:var(--a);
+  font-size:.78rem;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.08em
+}
+
+.item h3 {
+  font-size:1rem;
+  margin:3px 0
+}
+
+.item p,.talks span {
+  font-size:.9rem;
+  color:var(--m);
+  margin:2px 0
+}
+
+.talks li {
+  margin:14px 0;
+  padding-left:6px
+}
+
+.cvbtn {
+  display:inline-block;
+  margin-top:12px;
+  padding:8px 14px;
+  border-radius:3px;
+  background:var(--a);
+  color:#fff
+}
+
+footer {
+  border-top:1px solid var(--l);
+  color:var(--m);
+  text-align:center;
+  padding:30px 20px;
+  font-size:.78rem
+}
+
+@media(max-width:720px) {
+  nav {
+  flex-wrap:wrap;
+  padding:13px 18px
+}
+
+.brand {
+  width:100%
+}
+
+.links {
+  gap:17px;
+  overflow:auto;
+  width:100%
+}
+
+.mode {
+  position:absolute;
+  right:16px;
+  top:16px
+}
+
+.wrap {
+  padding:38px 20px 70px
+}
+
+.profile {
+  float:none;
+  width:100%;
+  margin:0 0 30px;
+  text-align:left;
+  display:grid;
+  grid-template-columns:125px 1fr;
+  align-items:start;
+  gap:18px
+}
+
+.profile img {
+  width:125px;
+  height:155px
+}
+
+.hero h1 {
+  font-size:2.3rem
+}
+
+.cols {
+  grid-template-columns:1fr
+}
+
+.pub {
+  grid-template-columns:1fr
+}
+
+.thumb {
+  width:155px
+}
+
+.plinks {
+  margin-top:0;
+  font-size:.76rem
+}
+
+}
+</style>
+</head>
+<body>
+<!--
+============================================================
+手动编辑指南 / MANUAL EDITING GUIDE
+============================================================
+1. 使用 Ctrl + F 搜索下面的 EDIT 区域名称。
+2. 一般只修改 HTML 标签中间的文字。
+3. 链接格式：<a href="网址">显示文字</a>
+4. 邮箱格式：<a href="mailto:邮箱">邮箱</a>
+5. 添加论文：完整复制一个 <!-- PAPER 1 START -->
+<article class="pub"> ... </article>
+
+<!-- PAPER END -->。
+6. 不要删除 <section>、</section>
+、<article>、</article>
+
+<!-- PAPER END --> 等标签。
+7. 修改完成后点击 Commit changes... 保存。
+============================================================
+-->
+<!-- ===== EDIT 1: TOP NAVIGATION / 顶部导航 ===== -->
+<header class="head">
+<nav>
+<a class="brand" href="#about">Jiacheng Liu</a>
+<div class="links">
+<a href="#about">About</a>
+<a href="#publications">Publications</a>
+<a href="#research">Research</a>
+<a href="#talks">Talks</a>
+<a href="#cv">CV</a>
+</div>
+
+<button class="mode" aria-label="Toggle dark mode" onclick="document.documentElement.dataset.theme=document.documentElement.dataset.theme==='dark'?'light':'dark'">◐</button>
+</nav>
+
+</header>
+
+<main class="wrap">
+<!-- ===== EDIT 2: NAME, TITLE, PHOTO AND PROFILE LINKS / 姓名、身份、照片和链接 ===== -->
+<section class="hero" id="about" style="border:0;margin:0;padding:0">
+<h1>
+<strong>Jiacheng</strong> Liu</h1>
+
+<p class="sub">Ph.D. Student, Department of Electronic and Computer Engineering, <a href="https://hkust.edu.hk/">HKUST</a>
+</p>
+
+<div class="profile">
+<img src="https://github.com/2018021411015.png" alt="Portrait of Jiacheng Liu">
+<div class="plinks">
+<div>Lab page: <a href="https://sqml.ust.hk/">SQML</a>
+</div>
+
+<div>Visiting lab: <a href="https://otaniqnm.com/home/">Otani Lab</a>
+</div>
+
+<div>Mail: <a href="mailto:jliuex@connect.ust.hk">jliuex@connect.ust.hk</a>
+</div>
+
+<div>Google Scholar: <a href="https://scholar.google.com/citations?user=_iueNKUAAAAJ&amp;hl=zh-CN&amp;oi=ao">_iueNKUAAAAJ</a>
+</div>
+
+</div>
+
+</div>
+
+<!-- ===== EDIT 3: ABOUT ME / 个人介绍 ===== -->
+<div class="bio">
+<p>I’m a Ph.D. student in the Department of Electronic and Computer Engineering at <a href="https://hkust.edu.hk/">The Hong Kong University of Science and Technology</a>. In the <a href="https://sqml.ust.hk/">Spintronic Quantum Material Laboratory (SQML)</a>, under the mentorship of Prof. <a href="https://researchportal.hkust.edu.hk/en/persons/qiming-shao/">Qiming Shao</a>, I focus on hybrid quantum systems involving magnons, photons, phonons, and superconducting qubits.</p>
+
+<p>From November 2023 to June 2024, I was a visiting Ph.D. student in the <a href="https://otaniqnm.com/home/">Quantum Nano-Scale Magnetism Research Team at RIKEN</a>, advised by Prof. <a href="https://www.k.u-tokyo.ac.jp/materials/en/otani/">Yoshichika Otani</a> and Prof. Qiming Shao. My research combines device physics, micromagnetic and numerical modelling, microwave measurements, and nanofabrication to develop coherent, low-dissipation, on-chip quantum technologies.</p>
+
+</div>
+
+<!-- ===== EDIT 4: RESEARCH INTERESTS / 研究方向 ===== -->
+<div class="hero-research" id="research">
+<h2>Current research interests</h2>
+
+<ul>
+<li>
+<strong>Hybrid magnon–photon quantum systems</strong>Coherent microwave conversion, nonlinear magnonic processes, and photon-mediated quantum interfaces.</li>
+
+<li>
+<strong>Strong magnon–magnon coupling</strong>Engineering low-dissipation coupling in all-magnetic-insulator heterostructures through modelling, simulation, and experiment.</li>
+
+<li>
+<strong>Hybrid magnon–phonon crystals</strong>Tailoring coupled excitations and band structures using periodic and moiré-like magnetic-acoustic systems.</li>
+
+<li>
+<strong>Magnon–superconducting-qubit interfaces</strong>Exploring on-chip hybrid platforms for coherent quantum control and information processing.</li>
+
+</ul>
+
+</div>
+
+<div class="contact-note">
+<p>For a deeper insight into my research, please refer to my <a href="#publications">publications</a>.</p>
+
+<p>If you wish to discuss with me, feel free to contact me via <a href="mailto:jliuex@connect.ust.hk">email</a>.</p>
+
+</div>
+
+<div class="status">
+<span class="dot">
+</span>
+<strong>Seeking postdoctoral opportunities starting in 2027</strong>
+</div>
+
+</section>
+
+<!-- ===== EDIT 5: PUBLICATIONS / 论文 ===== -->
+<!-- 添加论文时，复制一个完整的 article.pub 区块 -->
+<section id="publications">
+<div class="eye">Research output</div>
+
+<h2>Selected publications</h2>
+
+<!-- PAPER 2 START -->
+<article class="pub">
+<div class="thumb t1">MICROWAVE<br>CONVERSION</div>
+
+<div>
+<h3>Wideband coherent microwave conversion via magnon nonlinearity in a hybrid quantum system</h3>
+
+<p class="authors">J. Wu*, <strong>J. Liu*</strong>, Z. Ren*, et al.</p>
+
+<p class="venue">
+<em>npj Spintronics</em> 2, 30 (2024)</p>
+
+<div class="buttons">
+<details>
+<summary>Abs</summary>
+<p>A hybrid magnonic platform for wideband coherent microwave conversion enabled by magnon nonlinearity.</p>
+
+</details>
+
+<a class="badge" href="https://doi.org/10.1038/s44306-024-00035-2">DOI</a>
+</div>
+
+</div>
+
+</article>
+
+<!-- PAPER END -->
+<!-- PAPER 3 START -->
+<article class="pub">
+<div class="thumb t2">MAGNON<br>COUPLING</div>
+
+<div>
+<h3>Strong magnon-magnon coupling and low dissipation rate in an all-magnetic-insulator heterostructure</h3>
+
+<p class="authors">
+<strong>J. Liu</strong> et al.</p>
+
+<p class="venue">
+<em>Physical Review Applied</em> 22, 034017 (2024)</p>
+
+<div class="buttons">
+<details>
+<summary>Abs</summary>
+<p>Experimental and numerical investigation of strong magnon coupling and low dissipation in a magnetic-insulator heterostructure.</p>
+
+</details>
+
+<a class="badge" href="https://doi.org/10.1103/PhysRevApplied.22.034017">DOI</a>
+</div>
+
+</div>
+
+</article>
+
+<!-- PAPER END -->
+<!-- PAPER 4 START -->
+<article class="pub">
+<div class="thumb t3">MAGNON–PHONON<br>CRYSTALS</div>
+
+<div>
+<h3>Hybrid magnon-phonon crystals</h3>
+
+<p class="authors">L. Liao, <strong>J. Liu</strong>, J. Puebla, Q. Shao, and Y. Otani</p>
+
+<p class="venue">
+<em>npj Spintronics</em> 2, 47 (2024)</p>
+
+<div class="buttons">
+<details>
+<summary>Abs</summary>
+<p>Engineered periodic magnetic and acoustic structures for tailoring hybrid magnon–phonon excitations.</p>
+
+</details>
+
+<a class="badge" href="https://doi.org/10.1038/s44306-024-00052-1">DOI</a>
+</div>
+
+</div>
+
+</article>
+
+<!-- PAPER END -->
+<!-- PAPER 5 START -->
+<article class="pub">
+<div class="thumb t4">NEUROMORPHIC<br>SPINTRONICS</div>
+
+<div>
+<h3>Tunable intermediate states for neuromorphic computing with spintronic devices</h3>
+
+<p class="authors">S. K. Cheung, Z. Xiao, <strong>J. Liu</strong>, Z. Ren, and Q. Shao</p>
+
+<p class="venue">
+<em>Journal of Applied Physics</em> 136 (2024)</p>
+
+<div class="buttons">
+<details>
+<summary>Abs</summary>
+<p>Tunable magnetic intermediate states and their application to multi-level neuromorphic computing architectures.</p>
+
+</details>
+
+<a class="badge" href="https://doi.org/10.1063/5.0187647">DOI</a>
+</div>
+
+</div>
+
+</article>
+
+<!-- PAPER END -->
+<!-- PAPER 6 START -->
+<article class="pub">
+<div class="thumb t5">PHONONIC<br>RESONATOR</div>
+
+<div>
+<h3>Q-factor enhancement of thin-film piezoelectric-on-silicon MEMS resonator by phononic crystal-reflector composite structure</h3>
+
+<p class="authors">
+<strong>J. Liu</strong> et al.</p>
+
+<p class="venue">
+<em>Micromachines</em> 11, 1130 (2020)</p>
+
+<div class="buttons">
+<details>
+<summary>Abs</summary>
+<p>A phononic-crystal reflector design for suppressing anchor loss and improving the quality factor of piezoelectric MEMS resonators.</p>
+
+</details>
+
+<a class="badge" href="https://doi.org/10.3390/mi11121130">DOI</a>
+</div>
+
+</div>
+
+</article>
+
+<!-- PAPER END -->
+</section>
+
+<!-- ===== EDIT 6: TALKS AND PRESENTATIONS / 报告与会议 ===== -->
+<section id="talks">
+<div class="eye">Professional activities</div>
+
+<h2>Selected talks & presentations</h2>
+
+<ul class="talks">
+<li>
+<strong>IEEE Magnetic Society Summer School</strong> — On-chip zero-field spin wave frequency multiplier and its application on qubit quantum control. <span>Poster · Distinguished Poster Award · 2025</span>
+</li>
+
+<li>
+<strong>IEEE EDTM</strong> — On-chip photon-mediated magnon-superconducting qubit system and its quantum application. <span>Oral · 2025</span>
+</li>
+
+<li>
+<strong>IEEE IEDM</strong> — On-chip zero-field spin wave frequency multiplier and its application on qubit quantum control. <span>Oral · 2023</span>
+</li>
+
+<li>
+<strong>IEEE INTERMAG</strong> — Numerical and micromagnetic investigation of strong magnon-magnon coupling. <span>Oral · 2023</span>
+</li>
+
+</ul>
+
+</section>
+
+<!-- ===== EDIT 7: CV, EDUCATION AND HONORS / 教育经历与奖项 ===== -->
+<section id="cv">
+<div class="eye">Curriculum vitae</div>
+
+<h2>Education, experience & honors</h2>
+
+<div class="cols">
+<div>
+<div class="item">
+<div class="date">2022–Present</div>
+
+<h3>Hong Kong University of Science and Technology</h3>
+
+<p>Ph.D. Student, Electronic and Computer Engineering · Advisor: Prof. Qiming Shao · CGA: 3.984/4.3</p>
+
+</div>
+
+<div class="item">
+<div class="date">2023–2024</div>
+
+<h3>RIKEN, Japan</h3>
+
+<p>Visiting Ph.D. Student, Quantum Nano-Scale Magnetism Research Team.</p>
+
+</div>
+
+<div class="item">
+<div class="date">2018–2022</div>
+
+<h3>University of Electronic Science and Technology of China</h3>
+
+<p>B.Eng. in Electronic Engineering · GPA: 3.96/4.0</p>
+
+</div>
+
+</div>
+
+<div>
+<div class="item">
+<div class="date">2025</div>
+
+<h3>Distinguished Poster Award</h3>
+
+<p>IEEE Magnetic Society Summer School</p>
+
+</div>
+
+<div class="item">
+<div class="date">2022–2024</div>
+
+<h3>RedBird Ph.D. Scholarship</h3>
+
+<p>HKUST</p>
+
+</div>
+
+<div class="item">
+<div class="date">2023</div>
+
+<h3>Student Presenter Travel Grant</h3>
+
+<p>IEEE IEDM</p>
+
+</div>
+
+<div class="item">
+<div class="date">2019–2021</div>
+
+<h3>National & Provincial Honors</h3>
+
+<p>National Scholarship; Outstanding Graduate of Sichuan Province; UESTC Outstanding Student.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<a class="cvbtn" href="mailto:jliuex@connect.ust.hk?subject=CV request">Request complete CV</a>
+</section>
+
+</main>
+
+<!-- ===== EDIT 8: FOOTER / 页脚 ===== -->
+<footer>© 2026 Jiacheng Liu · Inspired by the al-folio academic theme · Hosted by GitHub Pages</footer>
+
+</body>
+</html>
