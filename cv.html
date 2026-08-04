@@ -489,6 +489,631 @@ footer {
 
 }
 </style>
+<style>
+.cv-layout{display:grid;grid-template-columns:210px 1fr;gap:38px;align-items:start}
+.cv-side{position:sticky;top:105px;border-left:3px solid var(--a);padding-left:18px}
+.cv-side a{display:block;color:var(--t);font-weight:500;font-size:.88rem;margin:10px 0}
+.cv-intro{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;margin-bottom:28px}
+.cv-intro h1{font:300 3rem Roboto,Arial,sans-serif;margin:0}
+.cv-card{background:var(--p);border:1px solid var(--l);border-radius:6px;box-shadow:0 2px 10px #0001;padding:28px 30px;margin:0 0 24px;scroll-margin-top:95px}
+.cv-card h2{font:400 1.8rem Roboto,Arial,sans-serif;margin:0 0 20px}
+.cv-grid{display:grid;grid-template-columns:145px 1fr;gap:10px 18px}
+.cv-entry{display:grid;grid-template-columns:125px 1fr;gap:20px;padding:18px 0;border-top:1px solid var(--l)}
+.cv-entry:first-of-type{border-top:0;padding-top:0}
+.cv-year{color:var(--a);font-weight:700;font-size:.82rem;letter-spacing:.04em}
+.cv-entry h3{margin:0 0 5px;font-size:1rem}
+.cv-entry p,.cv-entry li,.cv-card li{color:var(--m);font-size:.9rem;margin:4px 0}
+.cv-card ul{margin:8px 0;padding-left:20px}
+.cv-link{display:inline-block;padding:8px 13px;border:1px solid var(--a);border-radius:3px}
+@media(max-width:720px){.cv-layout{grid-template-columns:1fr}.cv-side{position:static;display:flex;flex-wrap:wrap;gap:4px 14px}.cv-entry{grid-template-columns:1fr}.cv-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="head"><nav>
+<a class="brand" href="index.html">Jiacheng Liu</a>
+<div class="links">
+<a href="index.html">About</a>
+<a href="blog.html">Blog</a>
+<a href="publications.html">Publications</a>
+<a class="active" href="cv.html">CV</a>
+</div>
+<button class="mode" aria-label="Toggle dark mode" onclick="document.documentElement.dataset.theme=document.documentElement.dataset.theme==='dark'?'light':'dark'">◐</button>
+</nav></header>
+<main class="wrap">
+<div class="cv-layout">
+<aside class="cv-side" aria-label="CV sections">
+<a href="#general">General Information</a>
+<a href="#education">Education</a>
+<a href="#research-experience">Research Experience</a>
+<a href="#talks-cv">Lectures and Talks</a>
+<a href="#coursework">Related Coursework</a>
+<a href="#honors">Honors and Awards</a>
+<a href="#references">References</a>
+</aside>
+<div>
+<div class="cv-intro"><div><h1>CV</h1><p>Academic background, research experience, professional activities, and honors.</p></div><a class="cv-link" href="mailto:jliuex@connect.ust.hk?subject=CV request">Request PDF CV</a></div>
+
+<section class="cv-card" id="general">
+<h2>General Information</h2>
+<div class="cv-grid">
+<strong>Full name</strong><span>Jiacheng Liu</span>
+<strong>Position</strong><span>Ph.D. Candidate, Electronic and Computer Engineering, HKUST</span>
+<strong>Email</strong><a href="mailto:jliuex@connect.ust.hk">jliuex@connect.ust.hk</a>
+<strong>Google Scholar</strong><a href="https://scholar.google.com/citations?user=_iueNKUAAAAJ&hl=en">Jiacheng Liu</a>
+</div>
+</section>
+
+<section class="cv-card" id="education">
+<h2>Education</h2>
+<div class="cv-entry"><div class="cv-year">2022.09–Present</div><div><h3>Ph.D. Candidate in Electronic and Computer Engineering</h3><p>The Hong Kong University of Science and Technology, Hong Kong</p><ul><li>Advisor: Prof. Qiming Shao</li><li>CGA: 3.984/4.3</li></ul></div></div>
+<div class="cv-entry"><div class="cv-year">2023.11–2024.06</div><div><h3>Visiting Ph.D. Student</h3><p>Quantum Nano-Scale Magnetism Research Team, RIKEN, Japan</p><ul><li>Advisor: Prof. Yoshichika Otani</li></ul></div></div>
+<div class="cv-entry"><div class="cv-year">2018.09–2022.06</div><div><h3>B.Eng. in Electronic Engineering</h3><p>University of Electronic Science and Technology of China, Chengdu</p><ul><li>Weighted average: 90.15/100</li><li>GPA: 3.96/4.0</li></ul></div></div>
+</section>
+
+<section class="cv-card" id="research-experience">
+<h2>Research Experience</h2>
+<div class="cv-entry"><div class="cv-year">2022.09–Present</div><div><h3>Postgraduate Research · Spintronic Quantum Material Laboratory, HKUST</h3><p>Advisor: Prof. Qiming Shao</p><ul><li>Quantum spintronic devices and photon–magnon, phonon–magnon, and magnon–magnon hybrid systems.</li><li>Strong magnon–magnon coupling in magnetic-insulator bilayers.</li><li>Zero-field spin-wave frequency multiplication using quantum spin sensors.</li><li>Coherent coupling models for magnon–superconducting-qubit systems.</li></ul></div></div>
+<div class="cv-entry"><div class="cv-year">2023.11–2024.06</div><div><h3>Visiting Ph.D. Research · RIKEN</h3><p>Advisors: Prof. Yoshichika Otani and Prof. Qiming Shao</p><ul><li>Hybrid magnon–phonon systems.</li><li>Hybrid magnon–phonon crystals and artificial lattices.</li></ul></div></div>
+<div class="cv-entry"><div class="cv-year">2019.11–2022.06</div><div><h3>Undergraduate Research · Integrated Microsystems Laboratory, UESTC</h3><p>Advisors: Prof. Jingfu Bao and Prof. Ken-Ya Hashimoto</p><ul><li>Acoustic-wave device and phononic-crystal design.</li><li>Phononic-crystal optimization of resonator quality factors.</li><li>SAW, BAW, and FBAR device design.</li></ul></div></div>
+</section>
+
+<section class="cv-card" id="talks-cv">
+<h2>Lectures and Talks</h2>
+<h3>Conference presentations</h3>
+<ul>
+<li>IEEE Magnetic Society Summer School — Zero-field spin-wave frequency multiplier and qubit control. Poster, San Diego, 2025.</li>
+<li>Spin Summit — Hybrid magnon–phonon moiré lattices. Poster, Guiyang, 2025.</li>
+<li>IEEE EDTM — Photon-mediated magnon–superconducting-qubit system. Oral presentation, Hong Kong, 2025.</li>
+<li>IEEE IEDM — Zero-field spin-wave frequency multiplier and qubit control. Oral presentation, San Francisco, 2023.</li>
+<li>IEEE INTERMAG — Strong magnon–magnon coupling in magnetic-insulator bilayers. Oral presentation, Sendai, 2023.</li>
+<li>IEEE MTT-S IWS — Acoustic reflectors for anchor-loss reduction. Oral presentation, Nanjing, 2021.</li>
+<li>IEEE IUS — Fish-scale acoustic reflector array for AlN-on-silicon resonators. Poster, Glasgow, 2019.</li>
+</ul>
+<h3>Research seminars</h3>
+<ul>
+<li>Dissipative coupling in magnonic hybrid systems — SQML Research Seminar, 2024.</li>
+<li>Simulation of phononic crystals and metamaterials in COMSOL — SQML Research Seminar, 2023.</li>
+<li>Strong magnon–magnon coupling at ferromagnetic-insulator interfaces — SQML Research Seminar, 2022.</li>
+</ul>
+</section>
+
+<section class="cv-card" id="coursework">
+<h2>Related Coursework</h2>
+<div class="cv-grid">
+<strong>Mathematics</strong><span>Linear Algebra and Space Analytic Geometry (93); Calculus (92)</span>
+<strong>Physics</strong><span>Semiconductor Physics A (94); Microelectronic Devices (93); Signals and Systems B (95)</span>
+<strong>Laboratory</strong><span>EDA Experiments (98); Digital System Experiments I &amp; II (97 &amp; 97)</span>
+</div>
+</section>
+
+<section class="cv-card" id="honors">
+<h2>Honors and Awards</h2>
+<ul>
+<li>IEEE Magnetic Society Summer School Distinguished Poster Award, 2025</li>
+<li>RedBird Ph.D. Scholarship, HKUST, 2022–2024</li>
+<li>Research Postgraduate Scholarship, HKUST, 2022–2023</li>
+<li>Student Presenter Travel Grant, IEEE IEDM, 2023</li>
+<li>UGC Research Travel Grant, HKUST, 2022–2023</li>
+<li>Gratitude to Modern Chinese Scientists Scholarship, Sichuan Province, 2022</li>
+<li>Gold Award, China College Students’ “Internet+” Innovation and Entrepreneurship Competition, 2022</li>
+<li>Outstanding Graduate of Sichuan Province (Top 1%), 2021</li>
+<li>Outstanding Graduate of UESTC, 2021</li>
+<li>UESTC Outstanding Student (Top 10/4,988), 2021</li>
+<li>National Inspiration Scholarship (Top 1%), 2021</li>
+<li>Integrated Circuit Scholarship, China Electronics Society, 2021</li>
+<li>Global First Prize, Zhongguancun Talent Maker Competition, 2021</li>
+<li>First Prize, Challenge Cup, Sichuan Province, 2021</li>
+<li>Merit Student Scholarship – First Class, UESTC, 2019–2021</li>
+<li>National Scholarship (Top 1%), 2019</li>
+</ul>
+</section>
+
+<section class="cv-card" id="references">
+<h2>References</h2>
+<ul>
+<li>Prof. Qiming Shao — The Hong Kong University of Science and Technology</li>
+<li>Prof. Yoshichika Otani — RIKEN / The University of Tokyo</li>
+<li>Prof. Jingfu Bao — University of Electronic Science and Technology of China</li>
+<li>Prof. Ken-Ya Hashimoto — Chiba University</li>
+</ul>
+</section>
+</div>
+</div>
+</main>
+<footer>© 2026 Jiacheng Liu · Hosted by GitHub Pages</footer>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Jiacheng Liu — Ph.D. researcher in hybrid quantum systems, magnonics and spintronics at HKUST.">
+<title>CV | Jiacheng Liu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ===== WEBSITE COLORS AND LAYOUT =====
+   Main blue: change --a below.
+   Most users do not need to edit the remaining CSS.
+*/
+:root {
+  --a:#2f6fab;
+  --t:#30343a;
+  --m:#747980;
+  --l:#e5e7ea;
+  --s:#f7f8fa;
+  --p:#fff
+}
+
+[data-theme=dark] {
+  --a:#79b8f3;
+  --t:#e7e9ec;
+  --m:#aab0b7;
+  --l:#3b4047;
+  --s:#252a30;
+  --p:#1c2025
+}
+
+* {
+  box-sizing:border-box
+}
+
+html {
+  scroll-behavior:smooth;
+  scroll-padding-top:86px
+}
+
+body {
+  margin:0;
+  background:var(--p);
+  color:var(--t);
+  font:16px/1.72 Roboto,Arial,sans-serif
+}
+
+a {
+  color:var(--a);
+  text-decoration:none
+}
+
+a:hover {
+  text-decoration:underline
+}
+
+.head {
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:color-mix(in srgb,var(--p) 94%,transparent);
+  border-bottom:1px solid var(--l);
+  backdrop-filter:blur(10px)
+}
+
+nav {
+  max-width:980px;
+  min-height:72px;
+  margin:auto;
+  padding:0 22px;
+  display:flex;
+  align-items:center;
+  gap:28px
+}
+
+.brand {
+  margin-right:auto;
+  color:var(--t);
+  font:600 1.22rem "Roboto Slab",serif
+}
+
+.links {
+  display:flex;
+  gap:26px
+}
+
+.links a {
+  color:var(--m);
+  font-size:.94rem
+}
+
+.links a.active {
+  color:var(--a);
+  font-weight:500
+}
+
+.mode {
+  border:0;
+  background:none;
+  color:var(--m);
+  font-size:1.2rem;
+  cursor:pointer
+}
+
+.wrap {
+  max-width:980px;
+  margin:auto;
+  padding:58px 22px 90px
+}
+
+.hero {
+  min-height:620px
+}
+
+.profile {
+  float:right;
+  width:290px;
+  margin:8px 0 35px 55px;
+  text-align:left
+}
+
+.profile img {
+  width:100%;
+  height:355px;
+  object-fit:cover;
+  border-radius:6px;
+  box-shadow:0 2px 10px #0002
+}
+
+.plinks {
+  margin-top:16px;
+  font:500 .93rem/1.75 monospace
+}
+
+.plinks div {
+  white-space:nowrap
+}
+
+.plinks a {
+  font-family:Roboto,Arial,sans-serif;
+  font-weight:500
+}
+
+.eye {
+  color:var(--a);
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-size:.72rem;
+  font-weight:700
+}
+
+.hero h1 {
+  font:300 3.15rem/1.12 Roboto,Arial,sans-serif;
+  margin:0 0 10px;
+  letter-spacing:-.035em
+}
+
+.hero h1 strong {
+  font-weight:700
+}
+
+.sub {
+  font-size:1.05rem;
+  font-weight:400;
+  color:var(--t);
+  margin:0 0 27px
+}
+
+.bio {
+  font-size:1.03rem;
+  line-height:1.72
+}
+
+.bio p {
+  text-align:justify;
+  text-justify:inter-word
+}
+
+.hero-research {
+  margin-top:28px
+}
+
+.hero-research h2 {
+  font:400 1.72rem Roboto,Arial,sans-serif;
+  margin:0 0 12px
+}
+
+.hero-research ul {
+  padding-left:25px
+}
+
+.hero-research li {
+  margin:8px 0
+}
+
+.hero-research li strong {
+  display:block
+}
+
+.contact-note {
+  margin-top:24px
+}
+
+.contact-note p {
+  margin:8px 0
+}
+
+.status {
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  background:var(--s);
+  border-left:3px solid var(--a);
+  padding:10px 14px;
+  margin-top:12px;
+  font-size:.9rem
+}
+
+.dot {
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:#28b67a;
+  box-shadow:0 0 0 4px #28b67a22
+}
+
+section {
+  clear:both;
+  padding-top:36px;
+  margin-top:42px;
+  border-top:1px solid var(--l)
+}
+
+section h2 {
+  font:600 1.75rem "Roboto Slab",serif;
+  margin:0 0 24px
+}
+
+.pub {
+  display:grid;
+  grid-template-columns:155px 1fr;
+  gap:24px;
+  padding:24px 0;
+  border-top:1px solid var(--l)
+}
+
+.pub:first-of-type {
+  border-top:0;
+  padding-top:0
+}
+
+.thumb {
+  height:104px;
+  border-radius:3px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+  font-weight:700;
+  letter-spacing:.05em;
+  padding:15px;
+  box-shadow:0 1px 4px #0002
+}
+
+.t1 {
+  background:linear-gradient(135deg,#173f5f,#3caea3)
+}
+
+.t2 {
+  background:linear-gradient(135deg,#295b87,#57a0d3)
+}
+
+.t3 {
+  background:linear-gradient(135deg,#244b75,#7baed4)
+}
+
+.t4 {
+  background:linear-gradient(135deg,#173e63,#4f82b4)
+}
+
+.t5 {
+  background:linear-gradient(135deg,#123451,#2f6fab)
+}
+
+.pub h3 {
+  font-size:1.02rem;
+  line-height:1.45;
+  margin:0 0 5px;
+  font-weight:500
+}
+
+.authors,.venue {
+  font-size:.88rem;
+  color:var(--m);
+  margin:2px 0
+}
+
+.authors strong {
+  color:var(--t)
+}
+
+.buttons {
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin-top:10px
+}
+
+.badge,summary {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:68px;
+  height:36px;
+  border:1px solid var(--a);
+  border-radius:3px;
+  padding:2px 12px;
+  color:var(--a);
+  font-size:.74rem;
+  line-height:1.6;
+  cursor:pointer
+}
+
+.badge.citation {
+  background:color-mix(in srgb,var(--a) 10%,var(--p));
+  font-weight:500
+}
+
+.badge.scholar {
+  font-weight:500
+}
+
+.badge:hover,summary:hover {
+  background:var(--a);
+  color:#fff;
+  text-decoration:none
+}
+
+details {
+  display:inline
+}
+
+summary {
+  list-style:none
+}
+
+summary::-webkit-details-marker {
+  display:none
+}
+
+.authors-note {
+  margin:3px 0 0;
+  color:var(--m);
+  font-size:.78rem
+}
+
+details[open] {
+  display:block;
+  margin-top:12px
+}
+
+details[open] summary {
+  margin-bottom:8px
+}
+
+details p {
+  font-size:.87rem;
+  color:var(--m);
+  margin:0;
+  padding:10px 12px;
+  background:var(--s)
+}
+
+.cols {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:38px
+}
+
+.item {
+  margin-bottom:25px
+}
+
+.date {
+  color:var(--a);
+  font-size:.78rem;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.08em
+}
+
+.item h3 {
+  font-size:1rem;
+  margin:3px 0
+}
+
+.item p,.talks span {
+  font-size:.9rem;
+  color:var(--m);
+  margin:2px 0
+}
+
+.talks li {
+  margin:14px 0;
+  padding-left:6px
+}
+
+.cvbtn {
+  display:inline-block;
+  margin-top:12px;
+  padding:8px 14px;
+  border-radius:3px;
+  background:var(--a);
+  color:#fff
+}
+
+footer {
+  border-top:1px solid var(--l);
+  color:var(--m);
+  text-align:center;
+  padding:30px 20px;
+  font-size:.78rem
+}
+
+@media(max-width:720px) {
+  nav {
+  flex-wrap:wrap;
+  padding:13px 18px
+}
+
+.brand {
+  width:100%
+}
+
+.links {
+  gap:17px;
+  overflow:auto;
+  width:100%
+}
+
+.mode {
+  position:absolute;
+  right:16px;
+  top:16px
+}
+
+.wrap {
+  padding:38px 20px 70px
+}
+
+.profile {
+  float:none;
+  width:100%;
+  margin:0 0 30px;
+  text-align:left;
+  display:grid;
+  grid-template-columns:125px 1fr;
+  align-items:start;
+  gap:18px
+}
+
+.profile img {
+  width:125px;
+  height:155px
+}
+
+.hero h1 {
+  font-size:2.3rem
+}
+
+.cols {
+  grid-template-columns:1fr
+}
+
+.pub {
+  grid-template-columns:1fr
+}
+
+.thumb {
+  width:155px
+}
+
+.plinks {
+  margin-top:0;
+  font-size:.76rem
+}
+
+}
+</style>
 </head>
 <body>
 <header class="head"><nav>
