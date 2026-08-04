@@ -507,6 +507,27 @@ footer {
 .cv-link{display:inline-block;padding:8px 13px;border:1px solid var(--a);border-radius:3px}
 @media(max-width:720px){.cv-layout{grid-template-columns:1fr}.cv-side{position:static;display:flex;flex-wrap:wrap;gap:4px 14px}.cv-entry{grid-template-columns:1fr}.cv-grid{grid-template-columns:1fr}}
 </style>
+<style>
+.cv-shell{display:grid;grid-template-columns:225px minmax(0,1fr);gap:42px;align-items:start}
+.cv-menu{position:sticky;top:105px;padding:4px 0 4px 20px;border-left:4px solid var(--a)}
+.cv-menu a{display:block;color:var(--t);font-size:.9rem;font-weight:600;margin:11px 0}
+.cv-top{display:flex;justify-content:space-between;gap:24px;align-items:center;margin:0 0 34px}
+.cv-top h1{font:300 3.4rem/1 Roboto,Arial,sans-serif;margin:0 0 14px}
+.pdf-tile{min-width:90px;text-align:center;color:var(--a);font-weight:700;font-size:1.1rem}
+.pdf-icon{display:block;margin:auto;width:54px;height:66px;border:3px solid var(--a);border-radius:7px;padding-top:17px;font-size:.9rem}
+.cv-panel{background:var(--p);border:1px solid var(--l);border-radius:7px;box-shadow:0 3px 15px #0002;padding:30px 32px;margin:0 0 26px;scroll-margin-top:92px}
+.cv-panel h2{font:300 2rem Roboto,Arial,sans-serif;margin:0 0 24px}
+.cv-panel h3{margin:20px 0 10px;font-size:1.02rem}
+.info-grid{display:grid;grid-template-columns:150px 1fr;gap:10px 18px}
+.timeline-row{display:grid;grid-template-columns:160px 1fr;gap:25px;padding:22px 0;border-top:1px solid var(--l)}
+.timeline-row:first-of-type{border-top:0;padding-top:0}
+.year-tag{justify-self:start;background:var(--a);color:#fff;border-radius:4px;padding:3px 9px;height:max-content;font-weight:700;font-size:.8rem;box-shadow:0 2px 5px #0002}
+.timeline-row h3{margin:0 0 6px}.timeline-row p{margin:4px 0;color:var(--m)}
+.cv-panel ul{margin:8px 0;padding-left:22px}.cv-panel li{margin:6px 0;color:var(--m)}
+.cv-pubs{padding-left:24px}.cv-pubs li{padding:8px 0;border-bottom:1px solid var(--l);color:var(--t)}.cv-pubs li:last-child{border-bottom:0}
+.cv-pubs strong{color:var(--t)}.cv-pubs em{color:var(--m)}
+@media(max-width:760px){.cv-shell{grid-template-columns:1fr}.cv-menu{position:static;display:flex;flex-wrap:wrap;gap:3px 15px}.timeline-row{grid-template-columns:1fr}.info-grid{grid-template-columns:1fr}.cv-top{align-items:flex-start}.pdf-tile{min-width:65px}}
+</style>
 </head>
 <body>
 <header class="head"><nav>
@@ -520,101 +541,148 @@ footer {
 <button class="mode" aria-label="Toggle dark mode" onclick="document.documentElement.dataset.theme=document.documentElement.dataset.theme==='dark'?'light':'dark'">◐</button>
 </nav></header>
 <main class="wrap">
-<div class="cv-layout">
-<aside class="cv-side" aria-label="CV sections">
-<a href="#general">General Information</a>
+<div class="cv-shell">
+<aside class="cv-menu" aria-label="CV sections">
+<a href="#general-information">General Information</a>
 <a href="#education">Education</a>
 <a href="#research-experience">Research Experience</a>
-<a href="#talks-cv">Lectures and Talks</a>
+<a href="#lectures-talks">Lectures and Talks</a>
+<a href="#publications-cv">Publications</a>
 <a href="#coursework">Related Coursework</a>
-<a href="#honors">Honors and Awards</a>
+<a href="#honors-awards">Honors and Awards</a>
+<a href="#patents">Patents</a>
 <a href="#references">References</a>
 </aside>
-<div>
-<div class="cv-intro"><div><h1>CV</h1><p>Academic background, research experience, professional activities, and honors.</p></div><a class="cv-link" href="mailto:jliuex@connect.ust.hk?subject=CV request">Request PDF CV</a></div>
 
-<section class="cv-card" id="general">
+<div>
+<div class="cv-top">
+<div><h1>CV</h1><p>Please contact me for the PDF version of my complete curriculum vitae.</p></div>
+<a class="pdf-tile" href="mailto:jliuex@connect.ust.hk?subject=PDF CV request"><span class="pdf-icon">PDF</span>Request</a>
+</div>
+
+<section class="cv-panel" id="general-information">
 <h2>General Information</h2>
-<div class="cv-grid">
-<strong>Full name</strong><span>Jiacheng Liu</span>
-<strong>Position</strong><span>Ph.D. Candidate, Electronic and Computer Engineering, HKUST</span>
+<div class="info-grid">
+<strong>Full Name</strong><span>Jiacheng Liu</span>
+<strong>Current Position</strong><span>Ph.D. Candidate in Electronic and Computer Engineering, HKUST</span>
 <strong>Email</strong><a href="mailto:jliuex@connect.ust.hk">jliuex@connect.ust.hk</a>
 <strong>Google Scholar</strong><a href="https://scholar.google.com/citations?user=_iueNKUAAAAJ&hl=en">Jiacheng Liu</a>
+<strong>Research Areas</strong><span>Hybrid magnonics, spintronics, quantum devices, microwave measurements, micromagnetic modelling, and nanofabrication</span>
 </div>
 </section>
 
-<section class="cv-card" id="education">
+<section class="cv-panel" id="education">
 <h2>Education</h2>
-<div class="cv-entry"><div class="cv-year">2022.09–Present</div><div><h3>Ph.D. Candidate in Electronic and Computer Engineering</h3><p>The Hong Kong University of Science and Technology, Hong Kong</p><ul><li>Advisor: Prof. Qiming Shao</li><li>CGA: 3.984/4.3</li></ul></div></div>
-<div class="cv-entry"><div class="cv-year">2023.11–2024.06</div><div><h3>Visiting Ph.D. Student</h3><p>Quantum Nano-Scale Magnetism Research Team, RIKEN, Japan</p><ul><li>Advisor: Prof. Yoshichika Otani</li></ul></div></div>
-<div class="cv-entry"><div class="cv-year">2018.09–2022.06</div><div><h3>B.Eng. in Electronic Engineering</h3><p>University of Electronic Science and Technology of China, Chengdu</p><ul><li>Weighted average: 90.15/100</li><li>GPA: 3.96/4.0</li></ul></div></div>
+<div class="timeline-row"><span class="year-tag">2022.09–Present</span><div><h3>Ph.D. Candidate in Electronic and Computer Engineering</h3><p>The Hong Kong University of Science and Technology, Hong Kong</p><ul><li>Advisor: Prof. Qiming Shao</li><li>CGA: 3.984/4.3</li></ul></div></div>
+<div class="timeline-row"><span class="year-tag">2023.11–2024.06</span><div><h3>Visiting Ph.D. Student</h3><p>Quantum Nano-Scale Magnetism Research Team, RIKEN, Wako, Japan</p><ul><li>Advisor: Prof. Yoshichika Otani</li></ul></div></div>
+<div class="timeline-row"><span class="year-tag">2018.09–2022.06</span><div><h3>B.Eng. in Electronic Engineering</h3><p>University of Electronic Science and Technology of China, Chengdu, China</p><ul><li>Weighted average: 90.15/100</li><li>GPA: 3.96/4.0</li></ul></div></div>
 </section>
 
-<section class="cv-card" id="research-experience">
+<section class="cv-panel" id="research-experience">
 <h2>Research Experience</h2>
-<div class="cv-entry"><div class="cv-year">2022.09–Present</div><div><h3>Postgraduate Research · Spintronic Quantum Material Laboratory, HKUST</h3><p>Advisor: Prof. Qiming Shao</p><ul><li>Quantum spintronic devices and photon–magnon, phonon–magnon, and magnon–magnon hybrid systems.</li><li>Strong magnon–magnon coupling in magnetic-insulator bilayers.</li><li>Zero-field spin-wave frequency multiplication using quantum spin sensors.</li><li>Coherent coupling models for magnon–superconducting-qubit systems.</li></ul></div></div>
-<div class="cv-entry"><div class="cv-year">2023.11–2024.06</div><div><h3>Visiting Ph.D. Research · RIKEN</h3><p>Advisors: Prof. Yoshichika Otani and Prof. Qiming Shao</p><ul><li>Hybrid magnon–phonon systems.</li><li>Hybrid magnon–phonon crystals and artificial lattices.</li></ul></div></div>
-<div class="cv-entry"><div class="cv-year">2019.11–2022.06</div><div><h3>Undergraduate Research · Integrated Microsystems Laboratory, UESTC</h3><p>Advisors: Prof. Jingfu Bao and Prof. Ken-Ya Hashimoto</p><ul><li>Acoustic-wave device and phononic-crystal design.</li><li>Phononic-crystal optimization of resonator quality factors.</li><li>SAW, BAW, and FBAR device design.</li></ul></div></div>
+<div class="timeline-row"><span class="year-tag">2022.09–Present</span><div><h3>Postgraduate Research · Spintronic Quantum Material Laboratory, HKUST</h3><p>Advisor: Prof. Qiming Shao</p><ul><li>Quantum spintronic devices; photon–magnon, phonon–magnon, and magnon–magnon hybrid systems.</li><li>Strong magnon–magnon coupling in magnetic-insulator bilayers.</li><li>Zero-field spin-wave frequency multiplication using quantum spin sensors.</li><li>Accurate modelling of coherent coupling between magnons and superconducting qubits.</li></ul></div></div>
+<div class="timeline-row"><span class="year-tag">2023.11–2024.06</span><div><h3>Visiting Ph.D. Research · Quantum Nano-Scale Magnetism Research Team, RIKEN</h3><p>Advisors: Prof. Yoshichika Otani and Prof. Qiming Shao</p><ul><li>Hybrid magnon–phonon systems.</li><li>Hybrid magnon–phonon crystals.</li></ul></div></div>
+<div class="timeline-row"><span class="year-tag">2019.11–2022.06</span><div><h3>Undergraduate Research · Integrated Microsystems Laboratory, UESTC</h3><p>Advisors: Prof. Jingfu Bao and Prof. Ken-Ya Hashimoto</p><ul><li>Acoustic-wave device design and phononic crystals.</li><li>Phononic-crystal optimization of acoustic resonator quality factors.</li><li>SAW, BAW, and FBAR device design.</li></ul></div></div>
 </section>
 
-<section class="cv-card" id="talks-cv">
+<section class="cv-panel" id="lectures-talks">
 <h2>Lectures and Talks</h2>
 <h3>Conference presentations</h3>
-<ul>
-<li>IEEE Magnetic Society Summer School — Zero-field spin-wave frequency multiplier and qubit control. Poster, San Diego, 2025.</li>
-<li>Spin Summit — Hybrid magnon–phonon moiré lattices. Poster, Guiyang, 2025.</li>
-<li>IEEE EDTM — Photon-mediated magnon–superconducting-qubit system. Oral presentation, Hong Kong, 2025.</li>
-<li>IEEE IEDM — Zero-field spin-wave frequency multiplier and qubit control. Oral presentation, San Francisco, 2023.</li>
-<li>IEEE INTERMAG — Strong magnon–magnon coupling in magnetic-insulator bilayers. Oral presentation, Sendai, 2023.</li>
-<li>IEEE MTT-S IWS — Acoustic reflectors for anchor-loss reduction. Oral presentation, Nanjing, 2021.</li>
-<li>IEEE IUS — Fish-scale acoustic reflector array for AlN-on-silicon resonators. Poster, Glasgow, 2019.</li>
-</ul>
+<ol class="cv-pubs">
+<li><strong>On-chip zero-field spin wave frequency multiplier and its application on qubit quantum control.</strong> IEEE Magnetic Society Summer School, poster, San Diego, USA, June 2025. Distinguished Poster Award.</li>
+<li><strong>Hybrid magnon phonon moiré lattices.</strong> Spin Summit, poster, Guiyang, China, August 2025.</li>
+<li><strong>On-chip photon-mediated magnon-superconducting qubit system and its quantum application.</strong> IEEE EDTM, oral presentation, Hong Kong, March 2025.</li>
+<li><strong>On-chip zero-field spin wave frequency multiplier and its application on qubit quantum control.</strong> IEEE IEDM, oral presentation, San Francisco, USA, December 2023.</li>
+<li><strong>Numerical and Micromagnetic Investigation of Strong Magnon-Magnon Coupling in Magnetic Insulator Bilayers.</strong> IEEE INTERMAG, oral presentation, Sendai, Japan, May 2023.</li>
+<li><strong>Acoustic Reflectors for Anchor Loss Reduction of Thin Film Piezoelectric on Substrate Resonators.</strong> IEEE MTT-S IWS, oral presentation, Nanjing, China, May 2021.</li>
+<li><strong>Fish Scale-shaped Acoustic Reflector Array for Quality Factor Enhancement of AlN-on-Silicon MEMS Resonator.</strong> IEEE IUS, poster, Glasgow, UK, October 2019.</li>
+</ol>
 <h3>Research seminars</h3>
-<ul>
-<li>Dissipative coupling in magnonic hybrid systems — SQML Research Seminar, 2024.</li>
-<li>Simulation of phononic crystals and metamaterials in COMSOL — SQML Research Seminar, 2023.</li>
-<li>Strong magnon–magnon coupling at ferromagnetic-insulator interfaces — SQML Research Seminar, 2022.</li>
-</ul>
+<ol class="cv-pubs">
+<li><strong>Dissipative coupling in hybrid systems based on magnonics.</strong> SQML Research Seminar, August 2024.</li>
+<li><strong>Simulation of phononic crystals (metamaterials) in COMSOL.</strong> SQML Research Seminar, August 2023.</li>
+<li><strong>Strong Magnon-Magnon Coupling at the Interface of the Ferromagnetic Insulator Heterostructure.</strong> SQML Research Seminar, February 2022.</li>
+</ol>
 </section>
 
-<section class="cv-card" id="coursework">
+<section class="cv-panel" id="publications-cv">
+<h2>Publications</h2>
+<h3>Journal papers</h3>
+<ol class="cv-pubs">
+<li>J. Wu*, <strong>J. Liu*</strong>, Z. Ren*, M. Y. Leung, W. K. Leung, K. O. Ho, Q. Shao, and S. Yang. “Wideband coherent microwave conversion via magnon nonlinearity in a hybrid quantum system.” <em>npj Spintronics</em> 2, 30 (2024). DOI: 10.1038/s44306-024-00035-2.</li>
+<li><strong>J. Liu</strong>, Y. Xiong, J. Liang, X. Wu, C. Liu, S. K. Cheung, Z. Ren, R. Liu, A. Christy, Z. Chen, Y. Liu, F. P. Nugraha, X.-X. Zhang, D. C. W. Leung, W. Zhang, and Q. Shao. “Strong magnon-magnon coupling and low dissipation rate in an all-magnetic-insulator heterostructure.” <em>Physical Review Applied</em> 22, 034017 (2024). DOI: 10.1103/PhysRevApplied.22.034017.</li>
+<li>L. Liao, <strong>J. Liu</strong>, J. Puebla, Q. Shao, and Y. Otani. “Hybrid magnon-phonon crystals.” <em>npj Spintronics</em> 2, 47 (2024). DOI: 10.1038/s44306-024-00052-1.</li>
+<li>S. K. Cheung, Z. Xiao, <strong>J. Liu</strong>, Z. Ren, and Q. Shao. “Tunable intermediate states for neuromorphic computing with spintronic devices.” <em>Journal of Applied Physics</em> 136 (2024). DOI: 10.1063/5.0187647.</li>
+<li>Z. Ren, R. Liu, S. K. Cheung, K. Qian, X. Wu, Z. Xiao, Z. Tong, <strong>J. Liu</strong>, and Q. Shao. “Strongly Temperature-Dependent Spin-Orbit Torque in a Sputtered Topological Semimetal.” <em>Journal of Applied Physics</em> 135 (2024). DOI: 10.1063/5.0157352.</li>
+<li><strong>J. Liu</strong>, T. B. Workie, T. Wu, Z. Wu, K. Gong, J. Bao, and K. Hashimoto. “Q-factor Enhancement of Thin-Film Piezoelectric-on-Silicon MEMS Resonator by Phononic Crystal-Reflector Composite Structure.” <em>Micromachines</em> 11, 1130 (2020). DOI: 10.3390/mi11121130.</li>
+</ol>
+<h3>Conference papers and abstracts</h3>
+<ol class="cv-pubs">
+<li><strong>J. Liu</strong>, F. P. Nugraha, and Q. Shao. “On-chip photon-mediated magnon-superconducting qubit system and its quantum application.” IEEE EDTM, 2025.</li>
+<li><strong>J. Liu</strong>, J. Wu, Z. Ren, S. Yang, and Q. Shao. “On-chip zero-field spin wave frequency multiplier and its application on qubit quantum control.” IEEE IEDM, 2023. DOI: 10.1109/IEDM45741.2023.10413860.</li>
+<li><strong>J. Liu</strong>, Y. Ohara, Z. Xu, R. Liu, Z. Li, X. Wang, T. Tsuchiya, and M. Wong. “Micro-Fabricated Bi-stable Mechanical Switch Actuated by a Single Thermal Actuator.” Transducers, 2023.</li>
+<li><strong>J. Liu</strong> and Q. Shao. “Numerical and Micromagnetic Investigation of Strong Magnon-Magnon Coupling in Magnetic Insulator Bilayers.” IEEE INTERMAG, 2023. DOI: 10.1109/INTERMAGShortPapers58606.2023.10228275.</li>
+<li>Z. Ren, R. Liu, S. K. Cheung, K. Qian, X. Wu, Z. Xiao, Z. Tong, <strong>J. Liu</strong>, and Q. Shao. “Strongly Temperature-Dependent Spin-Orbit Torque in Sputtered WTeₓ.” APS March Meeting, 2023.</li>
+<li><strong>J. Liu</strong>, T. B. Workie, Z. Wu, P. Tang, J. Bao, and K. Hashimoto. “Acoustic Reflectors for Anchor Loss Reduction of Thin Film Piezoelectric on Substrate Resonators.” IEEE MTT-S IWS, 2021. DOI: 10.1109/IWS52775.2021.9499583.</li>
+<li>T. B. Workie, <strong>J. Liu</strong>, Z. Wu, P. Tang, J. Bao, and K. Hashimoto. “Swastika Hole-shaped Phononic Crystal for Quality Enhancement of Contour Mode Resonators.” IEEE MTT-S IWS, 2021. DOI: 10.1109/IWS52775.2021.9499380.</li>
+<li>K. Gong, Z. Wu, Y. Wong, <strong>J. Liu</strong>, Q. Liang, Y. Li, J. Bao, and K. Hashimoto. “Application of Phononic Crystal Structure for Side Leakage Suppression in A1-Mode Lamb Wave Resonators.” IEEE IUS, 2021. DOI: 10.1109/IUS52206.2021.9593367.</li>
+<li>X. Zhou, <strong>J. Liu</strong>, F. Bao, Y. Song, J. Bao, and X. Zhang. “Fish Scale-shaped Acoustic Reflector Array for Quality Factor Enhancement of AlN-on-Silicon MEMS Resonator.” IEEE IUS, 2019. DOI: 10.1109/ULTSYM.2019.8926038.</li>
+<li>X. Wu, F. Bao, X. Zhou, Q. Wu, <strong>J. Liu</strong>, and J. Bao. “Spider Web-Shaped Phononic Crystals for Quality Factor Improvement of Piezoelectric-on-Silicon MEMS Resonators.” IEEE IUS, 2019. DOI: 10.1109/ULTSYM.2019.8926212.</li>
+</ol>
+</section>
+
+<section class="cv-panel" id="coursework">
 <h2>Related Coursework</h2>
-<div class="cv-grid">
+<div class="info-grid">
 <strong>Mathematics</strong><span>Linear Algebra and Space Analytic Geometry (93); Calculus (92)</span>
-<strong>Physics</strong><span>Semiconductor Physics A (94); Microelectronic Devices (93); Signals and Systems B (95)</span>
+<strong>Physics and Devices</strong><span>Semiconductor Physics A (94); Microelectronic Devices (93); Signals and Systems B (95)</span>
 <strong>Laboratory</strong><span>EDA Experiments (98); Digital System Experiments I &amp; II (97 &amp; 97)</span>
 </div>
 </section>
 
-<section class="cv-card" id="honors">
+<section class="cv-panel" id="honors-awards">
 <h2>Honors and Awards</h2>
 <ul>
 <li>IEEE Magnetic Society Summer School Distinguished Poster Award, 2025</li>
-<li>RedBird Ph.D. Scholarship, HKUST, 2022–2024</li>
-<li>Research Postgraduate Scholarship, HKUST, 2022–2023</li>
+<li>RedBird Ph.D. Scholarship, HKUST, 2024</li>
+<li>Research Postgraduate Scholarship, HKUST, 2023</li>
+<li>RedBird Ph.D. Scholarship, HKUST, 2023</li>
 <li>Student Presenter Travel Grant, IEEE IEDM, 2023</li>
-<li>UGC Research Travel Grant, HKUST, 2022–2023</li>
+<li>UGC Research Travel Grant, HKUST, 2023</li>
+<li>Research Postgraduate Scholarship, HKUST, 2022</li>
+<li>UGC Research Travel Grant, HKUST, 2022</li>
+<li>RedBird Ph.D. Scholarship, HKUST, 2022</li>
 <li>Gratitude to Modern Chinese Scientists Scholarship, Sichuan Province, 2022</li>
 <li>Gold Award, China College Students’ “Internet+” Innovation and Entrepreneurship Competition, 2022</li>
 <li>Outstanding Graduate of Sichuan Province (Top 1%), 2021</li>
 <li>Outstanding Graduate of UESTC, 2021</li>
-<li>UESTC Outstanding Student (Top 10/4,988), 2021</li>
+<li>UESTC Outstanding Student (Top 10/4,988; 0.2%), 2021</li>
 <li>National Inspiration Scholarship (Top 1%), 2021</li>
 <li>Integrated Circuit Scholarship, China Electronics Society, 2021</li>
+<li>Merit Student Scholarship - First Class, UESTC, 2021</li>
 <li>Global First Prize, Zhongguancun Talent Maker Competition, 2021</li>
 <li>First Prize, Challenge Cup, Sichuan Province, 2021</li>
-<li>Merit Student Scholarship – First Class, UESTC, 2019–2021</li>
+<li>Merit Student Scholarship - First Class, UESTC, 2020</li>
 <li>National Scholarship (Top 1%), 2019</li>
+<li>Merit Student Scholarship - First Class, UESTC, 2019</li>
 </ul>
 </section>
 
-<section class="cv-card" id="references">
+<section class="cv-panel" id="patents">
+<h2>Patents</h2>
+<ol class="cv-pubs">
+<li><strong>J. Liu</strong> and S. Hou. “Cellular Topology-Based Phononic Crystal Plate Design Method and Microelectromechanical Resonator.” Chinese Invention Patent ZL 2021 1 0694788.0, CN 113507276 B, granted 2024.</li>
+<li>Q. Shao, S. Yang, <strong>J. Liu</strong>, J. Wu, and Z. Ren. “Spin-Wave Frequency Conversion Device and Application System.” Chinese invention patent application, filed 2025 and under examination. Assignee: The Hong Kong University of Science and Technology.</li>
+</ol>
+</section>
+
+<section class="cv-panel" id="references">
 <h2>References</h2>
 <ul>
-<li>Prof. Qiming Shao — The Hong Kong University of Science and Technology</li>
-<li>Prof. Yoshichika Otani — RIKEN / The University of Tokyo</li>
-<li>Prof. Jingfu Bao — University of Electronic Science and Technology of China</li>
-<li>Prof. Ken-Ya Hashimoto — Chiba University</li>
+<li>Prof. Qiming Shao - The Hong Kong University of Science and Technology</li>
+<li>Prof. Yoshichika Otani - RIKEN / The University of Tokyo</li>
+<li>Prof. Jingfu Bao - University of Electronic Science and Technology of China</li>
+<li>Prof. Ken-Ya Hashimoto - Chiba University</li>
 </ul>
 </section>
 </div>
