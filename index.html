@@ -488,6 +488,25 @@ footer {
 }
 
 }
+
+/* ===== CONTACT ICONS / ABOUT PAGE FOOTER ===== */
+.connect-section{text-align:center;padding-bottom:14px}
+.connect-section h2{margin-bottom:8px}
+.connect-note{color:var(--m);font-size:.9rem;margin:0 0 24px}
+.social-links{display:flex;justify-content:center;align-items:flex-start;flex-wrap:wrap;gap:20px}
+.social-link,.wechat-details summary{width:104px;display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--t);font-size:.78rem;font-weight:500}
+.social-link:hover,.wechat-details summary:hover{background:none;color:var(--a);text-decoration:none}
+.social-icon{width:58px;height:58px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--t);color:var(--p);font-size:1.1rem;font-weight:700;letter-spacing:-.03em;transition:transform .18s ease,background .18s ease}
+.social-link:hover .social-icon,.wechat-details summary:hover .social-icon{transform:translateY(-3px);background:var(--a);color:#fff}
+.wechat-details{display:block;position:relative}
+.wechat-details summary{height:auto;min-width:0;border:0;padding:0;list-style:none}
+.wechat-details[open]{display:block;margin:0}
+.wechat-details[open] summary{margin:0}
+.wechat-card{position:absolute;z-index:8;right:50%;transform:translateX(50%);bottom:88px;width:280px;padding:10px;background:var(--p);border:1px solid var(--l);border-radius:7px;box-shadow:0 8px 30px #0003}
+.wechat-card img{display:block;width:100%;height:auto;border-radius:4px}
+.wechat-card p{margin:8px 0 2px;padding:0;background:none;color:var(--m);font-size:.78rem}
+@media(max-width:720px){.social-links{gap:16px}.social-link,.wechat-details summary{width:82px}.wechat-card{width:240px}}
+
 </style>
 </head>
 <body>
@@ -691,6 +710,24 @@ footer {
 </article>
 <!-- PAPER END -->
 </section>
+
+<section class="connect-section" id="connect">
+<div class="eye">Contact &amp; profiles</div>
+<h2>Connect with me</h2>
+<p class="connect-note">Academic profiles, code, curriculum vitae, and direct contact.</p>
+<div class="social-links">
+<a class="social-link" href="mailto:jliuex@connect.ust.hk" aria-label="Email Jiacheng Liu"><span class="social-icon">✉</span><span>Email</span></a>
+<a class="social-link" href="https://scholar.google.com/citations?user=_iueNKUAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><span class="social-icon">GS</span><span>Scholar</span></a>
+<a class="social-link" href="https://www.researchgate.net/profile/Jiacheng-Liu-37" target="_blank" rel="noopener" aria-label="ResearchGate"><span class="social-icon">RG</span><span>ResearchGate</span></a>
+<a class="social-link" href="https://github.com/2018021411015" target="_blank" rel="noopener" aria-label="GitHub"><span class="social-icon">GH</span><span>GitHub</span></a>
+<a class="social-link" href="cv.html" aria-label="Curriculum vitae"><span class="social-icon">CV</span><span>Curriculum Vitae</span></a>
+<details class="wechat-details">
+<summary aria-label="Show WeChat QR code"><span class="social-icon">微信</span><span>WeChat</span></summary>
+<div class="wechat-card"><img src="assets/images/wechat-jiacheng-liu.jpg" alt="WeChat QR code for Jiacheng Liu"><p>Scan to add me on WeChat.</p></div>
+</details>
+</div>
+</section>
+
 </main>
 <footer>© 2026 Jiacheng Liu · Hosted by GitHub Pages</footer>
 </body>
